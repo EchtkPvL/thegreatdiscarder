@@ -9,21 +9,42 @@
 </head>
 <body id="body">
 
-    <table id="gsProfiler" style="table-layout: fixed">
+<div class="mainContent">
 
-      <a id='refreshProfiler' href='#'>reload</a>
+	<h1 class="pageHeader"><img src="../img/icon64_hidden.png" class="headerIcon" />The Great Discarder</h1>
 
-      <thead>
-      <tr>
-         <th>WinId</th>
-         <th>TabId</th>
-         <th>Title</th>
-         <th>Time to discard</th>
-         <th>Status</th>
-      </tr>
-      </thead>
-      <tbody id="gsProfilerBody"></tbody>
-    </table>
+    <div class="contentNav">
+        <ul>
+            <li><a href='options.html'>General settings</a></li>
+			<li><a href='shortcuts.html'>Keyboard shortcuts</a></li>
+            <li><a class="active">Profiler</a></li>
+			<li><a href='about.html'>Support</a></li>
+        </ul>
+    </div>
+
+	<div class="content">
+
+		<h2>Profiler</h2>
+
+        <table id="gsProfiler" style="table-layout: fixed">
+
+          <a id='refreshProfiler' href='#'>reload</a>
+
+          <thead>
+          <tr>
+             <th>WinId</th>
+             <th>TabId</th>
+             <th>Title</th>
+             <th>Time to discard</th>
+             <th>Status</th>
+          </tr>
+          </thead>
+          <tbody id="gsProfilerBody"></tbody>
+        </table>
+		<br />
+	</div>
+
+</div>
 
 </body>
 </html>

@@ -52,7 +52,6 @@
       fetchInfo();
     };
 
-    /*
     chrome.processes.onUpdatedWithMemory.addListener(function (processes) {
       chrome.tabs.query({}, function (tabs) {
         var html = '';
@@ -62,6 +61,5 @@
         document.getElementById('gsProfiler').innerHTML = html;
       });
     });
-    */
   };
 }());
