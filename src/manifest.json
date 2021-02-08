@@ -1,7 +1,7 @@
 {
   "name": "The Great Discarder",
   "description": "Automatically discards unused tabs to free up system resources",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "permissions": [
     "tabs",
     "storage",
@@ -29,7 +29,7 @@
   },
   "incognito": "not_allowed",
   "manifest_version": 2,
-  "minimum_chrome_version": "54",
+  "minimum_chrome_version": "80",
 
   "commands": {
     "1-discard-tab": {

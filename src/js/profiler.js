@@ -17,9 +17,9 @@
     html += '<tr>';
     html += '<td>' + windowId + '</td>';
     html += '<td>' + tabId + '</td>';
-    html += '<td style="max-width:800px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + tabTitle + '</td>';
     html += '<td>' + tabTimer + '</td>';
     html += '<td>' + tabStatus + '</td>';
+    html += '<td style="max-width:800px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + tabTitle + '</td>';
     html += '</tr>';
 
     return html;
@@ -51,15 +51,5 @@
       document.getElementById('gsProfilerBody').innerHTML = '';
       fetchInfo();
     };
-
-    chrome.processes.onUpdatedWithMemory.addListener(function (processes) {
-      chrome.tabs.query({}, function (tabs) {
-        var html = '';
-        html += generateMemStats(processes);
-        html += '<br />';
-        html += generateTabStats(tabs);
-        document.getElementById('gsProfiler').innerHTML = html;
-      });
-    });
   };
 }());
