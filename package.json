@@ -1,10 +1,13 @@
 {
   "name": "thegreatdiscarder",
-  "version": "0.0.0",
+  "version": "0.1.4",
   "description": "A chrome extension for discarding all tabs to free up memory",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "grunt",
+    "generate-key": "openssl genrsa -out key.pem",
+    "test": "echo 'Error: no test specified' && exit 0",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -13,8 +16,8 @@
   "keywords": [
     "chrome",
     "extension",
-	  "addon",
-	  "memory",
+    "addon",
+    "memory",
     "discard",
     "tab"
   ],
